@@ -54,3 +54,21 @@ Ensure you have the necessary dependencies installed:
 
 ```bash
 pip install torch torchvision torchaudio jupyter
+
+## Running the Project
+Clone the repository:
+
+```bash
+git clone [https://github.com/gowthambalachandhiran/Gpt2Scratch.git](https://github.com/gowthambalachandhiran/Gpt2Scratch.git)
+cd Gpt2Scratch
+
+## Launch Jupyter:
+```bash
+jupyter notebook
+
+## Step-by-Step Execution:
+Navigate through the folders in numerical order to progress through the curriculum.
+
+## License
+This project is open-source and available under the [MIT License.](https://www.google.com/search?q=https://github.com/gowthambalachandhiran/Gpt2Scratch/blob/main/LICENSE)
+
