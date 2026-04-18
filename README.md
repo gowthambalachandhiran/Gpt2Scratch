@@ -1,138 +1,112 @@
-# GPT-2 from Scratch
+# \# GPT-2 from Scratch
+
+# 
 
 # This repository contains a comprehensive, step-by-step implementation of a GPT-style Large Language Model (LLM) based on the GPT-2 architecture. The project is designed for educational purposes, breaking down the complexities of transformer-based architectures into manageable modules.
 
 # 
 
-# Project Overview
-
-# The goal of this project is to build, train, and understand a Generative Pre-trained Transformer from the ground up. It covers the entire pipeline, from raw text processing to text generation.
+# \## Project Overview
 
 # 
 
-# Repository Structure
-
-# The project is organized into sequential modules reflecting the different stages of building an LLM:
+# The goal of this project is to build, train, and understand a Generative Pre-trained Transformer from the ground up. It covers the entire pipeline, from raw text processing to text generation and training on custom datasets.
 
 # 
 
-# 1\. Introduction - Working with Text Data
+# \---
+
+# 
+
+# \## Technical Stack
+
+# 
+
+# \* \*\*Language:\*\* Python 3.8+
+
+# \* \*\*Deep Learning Framework:\*\* PyTorch
+
+# \* \*\*Environment:\*\* Jupyter Notebooks
+
+# 
+
+# \---
+
+# 
+
+# \## Curriculum and Topics Covered
+
+# 
+
+# The repository is organized into sequential modules. It is recommended to follow them in the order listed below to build a solid foundation.
+
+# 
+
+# \### 1. Introduction: Working with Text Data
 
 # Focuses on the fundamentals of preparing data for a language model.
 
-# 
+# \* \*\*Tokenization:\*\* Strategies for breaking down raw text.
 
-# Text tokenization strategies.
+# \* \*\*Vocabulary Mapping:\*\* Converting tokens to numerical Input IDs.
 
-# 
+# \* \*\*Embeddings:\*\* Implementing word embeddings and positional encodings.
 
-# Converting tokens to input IDs.
-
-# 
-
-# Implementing word embeddings and positional encodings.
+# \* \*\*Data Loading:\*\* Handling data sampling with a sliding window approach.
 
 # 
 
-# Handling data sampling with a sliding window approach.
+# \### 2. Coding Attention
+
+# A deep dive into the core engine of the Transformer architecture.
+
+# \* \*\*Self-Attention:\*\* Implementing the basic mechanism.
+
+# \* \*\*Causal Attention:\*\* Building masked self-attention to prevent the model from "cheating" by looking at future tokens.
+
+# \* \*\*Multi-Head Attention:\*\* Allowing the model to focus on different parts of the input sequence simultaneously.
 
 # 
 
-# 2\. Coding Attention
+# \### 3. Generating Text with GPT
 
-# A deep dive into the core mechanism of the transformer architecture.
+# Integrating individual components into a functional, scalable model.
 
-# 
+# \* \*\*Transformer Blocks:\*\* Implementing Layer Normalization, GELU activation, and Feed-Forward networks.
 
-# Implementing Simple Self-Attention.
+# \* \*\*GPT Architecture:\*\* Building the model with configurable hyperparameters.
 
-# 
+# \* \*\*Weight Management:\*\* Loading pre-trained weights or initializing for fresh training.
 
-# Building Causal Attention (Masked Self-Attention) to prevent looking at future tokens.
-
-# 
-
-# Developing Multi-Head Attention to allow the model to focus on different parts of the input sequence simultaneously.
+# \* \*\*Decoding Loop:\*\* Implementing the logic for autoregressive text generation.
 
 # 
 
-# 3\. Generating Text with GPT
+# \### 4. Training on Unlabeled Data
 
-# Integrating the components into a functional model.
+# The final stage focusing on the pre-training objective.
 
-# 
+# \* \*\*Loss Calculation:\*\* Using Cross-Entropy for next-token prediction.
 
-# Implementing the Transformer Block (Layer Normalization, GELU activation, and Feed-Forward networks).
-
-# 
-
-# Building the GPT architecture with configurable hyperparameters.
+# \* \*\*Training Loops:\*\* Training the model on custom datasets (e.g., movie dialogue).
 
 # 
 
-# Loading pre-trained weights or initializing for fresh training.
+# \---
 
 # 
 
-# Implementing the decoding loop for text generation.
+# \## How to Use
 
 # 
 
-# Technical Stack
+# \### Installation
 
-# Language: Python
-
-# 
-
-# Framework: PyTorch
+# Ensure you have the necessary dependencies installed:
 
 # 
 
-# Environment: Jupyter Notebooks
+# ```bash
 
-# 
-
-# How to Use
-
-# Clone the repository:
-
-# 
-
-# Bash
-
-# git clone https://github.com/gowthambalachandhiran/Gpt2Scratch.git
-
-# cd Gpt2Scratch
-
-# Installation:
-
-# Ensure you have Python 3.8+ and PyTorch installed. You can install necessary dependencies via:
-
-# 
-
-# Bash
-
-# pip install torch torchvision torchaudio
-
-# pip install jupyter
-
-# Running the Notebooks:
-
-# Start Jupyter Lab or Notebook and navigate through the folders in order:
-
-# 
-
-# Bash
-
-# jupyter notebook
-
-# Contribution
-
-# Contributions are welcome. If you find any bugs or have suggestions for improving the implementation or documentation, please open an issue or submit a pull request.
-
-# 
-
-# License
-
-# This project is open-source and available under the MIT License.
+# pip install torch torchvision torchaudio jupyter
 
